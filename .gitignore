@@ -241,3 +241,5 @@ clase2.key
 clase1.key
 ~*.*
 poetry.lock
+
+data/
