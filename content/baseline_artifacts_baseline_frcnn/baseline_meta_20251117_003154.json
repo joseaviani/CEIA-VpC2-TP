@@ -1,0 +1,21 @@
+{
+  "saved_at": "20251117_003154",
+  "framework": "torchvision Faster R-CNN ResNet50-FPN",
+  "device": "cuda",
+  "num_classes_with_bg": 6,
+  "class_names": [
+    "Tijera",
+    "Navaja",
+    "Cuchillo",
+    "Cutter",
+    "Navaja multiuso"
+  ],
+  "train_imgs": 6181,
+  "valid_imgs": 1766,
+  "test_imgs": 883,
+  "eval_valid_macro": {
+    "precision": 0.8657763203378399,
+    "recall": 0.8317710983736329,
+    "f1": 0.844544967578036
+  }
+}
