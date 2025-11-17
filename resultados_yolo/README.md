@@ -21,6 +21,22 @@ Tiene 80 clases de objetos comunes, como:
 
 ### Ejecución del Entrenamiento
 
+Para ejecutar el dataset se creó un nuevo `virtualenv` en el cual se instaló:
+- librería `ultralytics` que tiene el comando utilizado para entrenar el modelo.
+- utilidad `gdown`, que utilizamos para descargar el dataset.
+Para instalarlos:
+
+```shell
+$ pip install ultralytics gdown
+```
+
+Luego se descargó y se descomprimió el dataset, el dataset fue subido a un google drive público para tenerlo de fácil acceso. A continuación los comandos ejecutados:
+
+```shell
+$ gdown 1IqPblTm7nmKFpHXtl4beopE_SajTBoI0
+$ unzip kaggle-xray_baggage_scanner_anomaly_detection.zip
+```
+
 El entrenamiento se ejecutó en una consola de una computadora con Linux, utilizando el siguiente comando:
 
 `$ yolo detect train data=data.yaml model=yolov8n.pt epochs=100 imgsz=416 device=0`
@@ -81,4 +97,4 @@ Es un claro ejemplo de **sobreajuste (overfitting)**.
 
 ### Siguientes pasos
 
-Dado que no se dispone de nuevos datos, los siguientes pasos se centrarán en mitigar el sobreajuste. Se puede recurrir a un **Data Augmentation** más agresivo (giros verticales, **rotación**, zoom) y utilizar un **WeightedRandomSampler**, como se planteó en el EDA (Análisis Exploratorio de Datos).
+Dado que no se dispone de nuevos datos, los siguientes pasos se centrarán en mitigar el sobreajuste. Se puede recurrir a **Data Augmentation**  (giros verticales, rotación, zoom) y utilizar un **WeightedRandomSampler**, como se planteó en el EDA (Análisis Exploratorio de Datos).
