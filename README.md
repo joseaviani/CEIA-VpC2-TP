@@ -12,3 +12,7 @@ José Aviani (jose.aviani@gmail.com)
 
 <br />
 
+## Enlaces útiles
+
+- [EDA incial](TP.ipynb)
+- [Baseline](resultados_yolo/README.md)
