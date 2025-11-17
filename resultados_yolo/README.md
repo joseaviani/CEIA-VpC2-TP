@@ -61,6 +61,8 @@ Tardó aproximadamente **1 hora y 20 minutos** en completar las 100 épocas util
 
 ### Resultados
 
+![Resultados](results.png)
+
 Todas las curvas `train/` (fila de arriba) bajan, y las métricas `metrics/` (fila de la derecha) suben. Esto es un buen **síntoma**.
 
 **La clasificación es muy buena:** Observando el gráfico `val/cls_loss` (fila de abajo, segundo), se ve una curva casi perfecta que baja y se aplana. Esto nos dice que el modelo se volvió capaz de identificar nuestro "elemento peligroso", distinguiéndolo bien del fondo.
