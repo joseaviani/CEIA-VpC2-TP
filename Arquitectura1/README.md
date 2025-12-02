@@ -46,6 +46,8 @@ A continuación se detallan las métricas máximas alcanzadas en cada iteración
 
 En este caso se utilizó un script para duplicar físicamente los archivos. [Ver código del script de duplicación](#2-aumento-físico-de-datos-oversampling)
 
+---
+
 ### Experimento 3: Arquitectura "Small" (Modelo Final)
 **Hipótesis:** El modelo Nano (3.2M parámetros) alcanzó su límite de capacidad de abstracción. Se migró a la arquitectura Small (11.2M parámetros) manteniendo las mejoras de datos anteriores.
 
